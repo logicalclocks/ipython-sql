@@ -19,7 +19,7 @@ install_requires = [
 ]
 
 
-setup(name='ipython-sql',
+setup(name='hops-ipython-sql',
     version=version,
     description="RDBMS access via IPython",
     long_description=README + '\n\n' + NEWS,
@@ -33,9 +33,9 @@ setup(name='ipython-sql',
         'Programming Language :: Python :: 2',
     ],
     keywords='database ipython postgresql mysql',
-    author='Catherine Devlin',
-    author_email='catherine.devlin@gmail.com',
-    url='https://pypi.python.org/pypi/ipython-sql',
+    author='Catherine Devlin, Fabio Buso',
+    author_email='catherine.devlin@gmail.com, fabio@logicalclocks.com',
+    url='https://github.com/logicalclocks/ipython-sql',
     license='MIT',
     packages=find_packages('src'),
     package_dir = {'': 'src'},
