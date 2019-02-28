@@ -55,9 +55,7 @@ class Connection(object):
                 existing = rough_dict_get(cls.connections, descriptor)
             cls.current = existing or Connection(descriptor)
         else:
-            if cls.connections:
-                print(cls.connection_list())
-            else:
+            if not cls.connections:
                 if os.getenv('DATABASE_URL'):
                     cls.current = Connection(os.getenv('DATABASE_URL'))
                 else:
